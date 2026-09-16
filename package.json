@@ -1,0 +1,26 @@
+{
+  "name": "top_odin_book_backend",
+  "version": "1.0.0",
+  "description": "The Odin Project - Odin Book [Backend]",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node --watch index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Feenixtm/top_odin_book_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Feenixtm/top_odin_book_backend/issues"
+  },
+  "homepage": "https://github.com/Feenixtm/top_odin_book_backend#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  }
+}
