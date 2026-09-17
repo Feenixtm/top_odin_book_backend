@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
 
@@ -7,6 +8,8 @@ const authRouter = require("./routes/authRouter.js");
 
 const app = express();
 
+// Allow front-end to talk to express backend
+app.use(cors());
 // Read JSON
 app.use(express.json());
 // Use form data
