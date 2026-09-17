@@ -7,6 +7,8 @@ const authRouter = require("./routes/authRouter.js");
 
 const app = express();
 
+// Read JSON
+app.use(express.json());
 // Use form data
 app.use(express.urlencoded({ extended: false }));
 
