@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const indexRouter = require("./routes/indexRouter.js");
+const authRouter = require("./routes/authRouter.js");
 
 const app = express();
 
@@ -10,6 +11,7 @@ const app = express();
 app.use(express.urlencoded({ extended: false }));
 
 app.use("/", indexRouter);
+app.use("/auth", authRouter);
 
 const PORT = process.env.APP_PORT || 5051;
 

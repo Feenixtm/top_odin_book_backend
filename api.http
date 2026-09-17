@@ -1,2 +1,11 @@
 ###
 GET http://localhost:5050/
+
+###
+POST http://localhost:5050/auth/sign-up/
+
+###
+POST http://localhost:5050/auth/login/
+
+###
+POST http://localhost:5050/auth/log-out/
