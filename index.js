@@ -5,6 +5,8 @@ dotenv.config();
 
 const indexRouter = require("./routes/indexRouter.js");
 const authRouter = require("./routes/authRouter.js");
+const postRouter = require('./routes/postRouter.js');
+const messageRouter = require("./routes/messageRouter.js");
 
 const app = express();
 
@@ -17,6 +19,8 @@ app.use(express.urlencoded({ extended: false }));
 
 app.use("/", indexRouter);
 app.use("/auth", authRouter);
+app.use("/posts", postRouter);
+app.use("/messages", messageRouter);
 
 const PORT = process.env.APP_PORT || 5051;
 
